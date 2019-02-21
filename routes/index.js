@@ -548,7 +548,7 @@ router.get("/api/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -631,7 +631,7 @@ router.get("/api/english/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -698,7 +698,7 @@ router.get("/api/spanish/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -765,7 +765,7 @@ router.get("/api/french/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -832,7 +832,7 @@ router.get("/api/german/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -899,7 +899,7 @@ router.get("/api/chinese/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
@@ -966,7 +966,7 @@ router.get("/api/japanese/",function (req,res,next) {
             console.log(err);
             reject(err);
         }
-        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1}).limit(50);
+        let cursor = db.collection('articles').find({language:language}).sort({pubDate:-1});
         let context = {};
         context.articles=[];
         cursor.toArray((error,docs) =>{
