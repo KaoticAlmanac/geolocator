@@ -1,0 +1,26 @@
+{
+  "en": {
+    "name": "English",
+    "native": "English"
+  },
+  "es": {
+    "name": "Spanish",
+    "native": "Español"
+  },
+  "de": {
+    "name": "German",
+    "native": "Deutsch"
+  },
+  "fr": {
+    "name": "French",
+    "native": "Français"
+  },
+  "ja": {
+    "name": "Japanese",
+    "native": "日本語"
+  },
+  "zh": {
+    "name": "Chinese",
+    "native": "中文"
+  }
+}
